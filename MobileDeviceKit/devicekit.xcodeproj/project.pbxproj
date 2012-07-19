@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420B53C515B71D1A00D52027 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B53C415B71D1A00D52027 /* Foundation.framework */; };
+		420B53C815B71D1A00D52027 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B53C715B71D1A00D52027 /* main.m */; };
+		420B53CC15B71D1A00D52027 /* devicekit.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 420B53CB15B71D1A00D52027 /* devicekit.1 */; };
+		420B53D915B71D7E00D52027 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B53D815B71D7E00D52027 /* Cocoa.framework */; };
+		420B53E315B71D7E00D52027 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 420B53E115B71D7E00D52027 /* InfoPlist.strings */; };
+		420B53E915B71F7A00D52027 /* DTDeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B53E815B71F7A00D52027 /* DTDeviceKit.framework */; };
+		420B53EC15B71FE500D52027 /* MDKDeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B53EA15B71FE500D52027 /* MDKDeviceManager.h */; };
+		420B53ED15B71FE500D52027 /* MDKDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B53EB15B71FE500D52027 /* MDKDeviceManager.m */; };
+		420B53EF15B7205E00D52027 /* DTDeviceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B53EE15B7205E00D52027 /* DTDeviceKit.h */; };
+		420B53F215B734D100D52027 /* MDKDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 420B53F015B734D100D52027 /* MDKDevice.h */; };
+		420B53F315B734D100D52027 /* MDKDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B53F115B734D100D52027 /* MDKDevice.m */; };
+		420B53F415B77CF600D52027 /* MobileDeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420B53D715B71D7E00D52027 /* MobileDeviceKit.framework */; };
+		4291CE4815B87438003B1880 /* MDKApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 4291CE4615B87438003B1880 /* MDKApplication.h */; };
+		4291CE4915B87438003B1880 /* MDKApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291CE4715B87438003B1880 /* MDKApplication.m */; };
+		4291CE4D15B87998003B1880 /* MDKFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4291CE4B15B87998003B1880 /* MDKFileManager.h */; };
+		4291CE4E15B87998003B1880 /* MDKFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291CE4C15B87998003B1880 /* MDKFileManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		420B53BE15B71D1900D52027 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				420B53CC15B71D1A00D52027 /* devicekit.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		420B53C015B71D1900D52027 /* devicekit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = devicekit; sourceTree = BUILT_PRODUCTS_DIR; };
+		420B53C415B71D1A00D52027 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		420B53C715B71D1A00D52027 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		420B53CA15B71D1A00D52027 /* devicekit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "devicekit-Prefix.pch"; sourceTree = "<group>"; };
+		420B53CB15B71D1A00D52027 /* devicekit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = devicekit.1; sourceTree = "<group>"; };
+		420B53D715B71D7E00D52027 /* MobileDeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobileDeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		420B53D815B71D7E00D52027 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		420B53DB15B71D7E00D52027 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		420B53DC15B71D7E00D52027 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		420B53DD15B71D7E00D52027 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		420B53E015B71D7E00D52027 /* MobileDeviceKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileDeviceKit-Info.plist"; sourceTree = "<group>"; };
+		420B53E215B71D7E00D52027 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		420B53E415B71D7E00D52027 /* MobileDeviceKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileDeviceKit-Prefix.pch"; sourceTree = "<group>"; };
+		420B53E815B71F7A00D52027 /* DTDeviceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTDeviceKit.framework; path = Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework; sourceTree = DEVELOPER_DIR; };
+		420B53EA15B71FE500D52027 /* MDKDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDKDeviceManager.h; sourceTree = "<group>"; };
+		420B53EB15B71FE500D52027 /* MDKDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDKDeviceManager.m; sourceTree = "<group>"; };
+		420B53EE15B7205E00D52027 /* DTDeviceKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDeviceKit.h; sourceTree = "<group>"; };
+		420B53F015B734D100D52027 /* MDKDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDKDevice.h; sourceTree = "<group>"; };
+		420B53F115B734D100D52027 /* MDKDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDKDevice.m; sourceTree = "<group>"; };
+		4291CE4615B87438003B1880 /* MDKApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDKApplication.h; sourceTree = "<group>"; };
+		4291CE4715B87438003B1880 /* MDKApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDKApplication.m; sourceTree = "<group>"; };
+		4291CE4B15B87998003B1880 /* MDKFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDKFileManager.h; sourceTree = "<group>"; };
+		4291CE4C15B87998003B1880 /* MDKFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDKFileManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		420B53BD15B71D1900D52027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B53F415B77CF600D52027 /* MobileDeviceKit.framework in Frameworks */,
+				420B53C515B71D1A00D52027 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420B53D315B71D7E00D52027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B53D915B71D7E00D52027 /* Cocoa.framework in Frameworks */,
+				420B53E915B71F7A00D52027 /* DTDeviceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420B53B515B71D1900D52027 = {
+			isa = PBXGroup;
+			children = (
+				420B53C615B71D1A00D52027 /* devicekit */,
+				420B53DE15B71D7E00D52027 /* MobileDeviceKit */,
+				420B53C315B71D1A00D52027 /* Frameworks */,
+				420B53C115B71D1900D52027 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		420B53C115B71D1900D52027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				420B53C015B71D1900D52027 /* devicekit */,
+				420B53D715B71D7E00D52027 /* MobileDeviceKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		420B53C315B71D1A00D52027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				420B53E815B71F7A00D52027 /* DTDeviceKit.framework */,
+				420B53C415B71D1A00D52027 /* Foundation.framework */,
+				420B53D815B71D7E00D52027 /* Cocoa.framework */,
+				420B53DA15B71D7E00D52027 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		420B53C615B71D1A00D52027 /* devicekit */ = {
+			isa = PBXGroup;
+			children = (
+				420B53C715B71D1A00D52027 /* main.m */,
+				420B53CB15B71D1A00D52027 /* devicekit.1 */,
+				420B53C915B71D1A00D52027 /* Supporting Files */,
+			);
+			path = devicekit;
+			sourceTree = "<group>";
+		};
+		420B53C915B71D1A00D52027 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				420B53CA15B71D1A00D52027 /* devicekit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		420B53DA15B71D7E00D52027 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				420B53DB15B71D7E00D52027 /* AppKit.framework */,
+				420B53DC15B71D7E00D52027 /* CoreData.framework */,
+				420B53DD15B71D7E00D52027 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		420B53DE15B71D7E00D52027 /* MobileDeviceKit */ = {
+			isa = PBXGroup;
+			children = (
+				420B53EE15B7205E00D52027 /* DTDeviceKit.h */,
+				420B53DF15B71D7E00D52027 /* Supporting Files */,
+				420B53EA15B71FE500D52027 /* MDKDeviceManager.h */,
+				420B53EB15B71FE500D52027 /* MDKDeviceManager.m */,
+				420B53F015B734D100D52027 /* MDKDevice.h */,
+				420B53F115B734D100D52027 /* MDKDevice.m */,
+				4291CE4615B87438003B1880 /* MDKApplication.h */,
+				4291CE4715B87438003B1880 /* MDKApplication.m */,
+				4291CE4B15B87998003B1880 /* MDKFileManager.h */,
+				4291CE4C15B87998003B1880 /* MDKFileManager.m */,
+			);
+			path = MobileDeviceKit;
+			sourceTree = "<group>";
+		};
+		420B53DF15B71D7E00D52027 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				420B53E015B71D7E00D52027 /* MobileDeviceKit-Info.plist */,
+				420B53E115B71D7E00D52027 /* InfoPlist.strings */,
+				420B53E415B71D7E00D52027 /* MobileDeviceKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		420B53D415B71D7E00D52027 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B53EC15B71FE500D52027 /* MDKDeviceManager.h in Headers */,
+				420B53EF15B7205E00D52027 /* DTDeviceKit.h in Headers */,
+				420B53F215B734D100D52027 /* MDKDevice.h in Headers */,
+				4291CE4815B87438003B1880 /* MDKApplication.h in Headers */,
+				4291CE4D15B87998003B1880 /* MDKFileManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		420B53BF15B71D1900D52027 /* devicekit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420B53CF15B71D1A00D52027 /* Build configuration list for PBXNativeTarget "devicekit" */;
+			buildPhases = (
+				420B53BC15B71D1900D52027 /* Sources */,
+				420B53BD15B71D1900D52027 /* Frameworks */,
+				420B53BE15B71D1900D52027 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = devicekit;
+			productName = devicekit;
+			productReference = 420B53C015B71D1900D52027 /* devicekit */;
+			productType = "com.apple.product-type.tool";
+		};
+		420B53D615B71D7E00D52027 /* MobileDeviceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420B53E515B71D7E00D52027 /* Build configuration list for PBXNativeTarget "MobileDeviceKit" */;
+			buildPhases = (
+				420B53D215B71D7E00D52027 /* Sources */,
+				420B53D315B71D7E00D52027 /* Frameworks */,
+				420B53D415B71D7E00D52027 /* Headers */,
+				420B53D515B71D7E00D52027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileDeviceKit;
+			productName = MobileDeviceKit;
+			productReference = 420B53D715B71D7E00D52027 /* MobileDeviceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		420B53B715B71D1900D52027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 420B53BA15B71D1900D52027 /* Build configuration list for PBXProject "devicekit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 420B53B515B71D1900D52027;
+			productRefGroup = 420B53C115B71D1900D52027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				420B53D615B71D7E00D52027 /* MobileDeviceKit */,
+				420B53BF15B71D1900D52027 /* devicekit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		420B53D515B71D7E00D52027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B53E315B71D7E00D52027 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		420B53BC15B71D1900D52027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B53C815B71D1A00D52027 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420B53D215B71D7E00D52027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420B53ED15B71FE500D52027 /* MDKDeviceManager.m in Sources */,
+				420B53F315B734D100D52027 /* MDKDevice.m in Sources */,
+				4291CE4915B87438003B1880 /* MDKApplication.m in Sources */,
+				4291CE4E15B87998003B1880 /* MDKFileManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		420B53E115B71D7E00D52027 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				420B53E215B71D7E00D52027 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		420B53CD15B71D1A00D52027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		420B53CE15B71D1A00D52027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		420B53D015B71D1A00D52027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "devicekit/devicekit-Prefix.pch";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		420B53D115B71D1A00D52027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "devicekit/devicekit-Prefix.pch";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		420B53E615B71D7E00D52027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks\"";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileDeviceKit/MobileDeviceKit-Prefix.pch";
+				INFOPLIST_FILE = "MobileDeviceKit/MobileDeviceKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		420B53E715B71D7E00D52027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks\"";
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobileDeviceKit/MobileDeviceKit-Prefix.pch";
+				INFOPLIST_FILE = "MobileDeviceKit/MobileDeviceKit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		420B53BA15B71D1900D52027 /* Build configuration list for PBXProject "devicekit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420B53CD15B71D1A00D52027 /* Debug */,
+				420B53CE15B71D1A00D52027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420B53CF15B71D1A00D52027 /* Build configuration list for PBXNativeTarget "devicekit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420B53D015B71D1A00D52027 /* Debug */,
+				420B53D115B71D1A00D52027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420B53E515B71D7E00D52027 /* Build configuration list for PBXNativeTarget "MobileDeviceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420B53E615B71D7E00D52027 /* Debug */,
+				420B53E715B71D7E00D52027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 420B53B715B71D1900D52027 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'devicekit' target in the 'devicekit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
