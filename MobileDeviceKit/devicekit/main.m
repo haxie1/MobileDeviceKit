@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "MDKDeviceManager.h"
+#import "MDKApplication.h"
+#import "MDKFileManager.h"
 @interface Dele : NSObject <MDKDeviceManagerDelegate>
 @end
 
@@ -16,6 +18,9 @@
 - (void)deviceManager:(MDKDeviceManager *)manager foundDevice:(MDKDevice *)device
 {
     NSLog(@"found a device: %@", device.name);
+    MDKApplication *app = [device applicationWithIdentifier:@"com.omnigroup.OmniFocus"];
+    MDKFileManager *fileManager = [app applicationFileManager];
+    [fileManager directoryContents:[NSURL fileURLWithPath:@"/Documents/Shared"]];
 }
 
 - (void)deviceManager:(MDKDeviceManager *)manager lostDevice:(MDKDevice *)device

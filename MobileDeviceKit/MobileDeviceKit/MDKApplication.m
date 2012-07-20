@@ -12,6 +12,7 @@
 
 @interface MDKApplication ()
 @property (nonatomic, retain) DTDKApplication *application;
+@property (nonatomic, retain) MDKFileManager *fileManager;
 - (id)initWithDTDKApplication:(DTDKApplication *)app;
 @end
 
@@ -32,6 +33,7 @@
 - (void)dealloc
 {
     [_application release];
+    [_fileManager release];
     [super dealloc];
 }
 
@@ -55,9 +57,15 @@
     return self.application.plist;
 }
 
+@synthesize fileManager = _fileManager;
 - (MDKFileManager *)applicationFileManager
 {
-    return nil;
+    if (! self.fileManager) {
+        DTDKApplicationPackage *root = [self.application.children anyObject];
+        self.fileManager = [[[MDKFileManager alloc] initWithApplicationDirectory:root] autorelease];
+    }
+    
+    return self.fileManager;
 }
 
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class DTDKApplicationPackage;
 @interface MDKFileManager : NSObject
+- (id)initWithApplicationDirectory:(DTDKApplicationPackage *)app;
+
+- (BOOL)downloadRemoteURL:(NSURL *)file toLocalPath:(NSURL *)localPath error:(NSError **)error;
+- (BOOL)uploadLocalURL:(NSURL *)file toRemotePath:(NSURL *)remotePath error:(NSError **)error;
+
+- (NSArray *)directoryContents:(NSURL *)remoteURL; // passing nil will list applications root
 
 @end
